@@ -15,14 +15,13 @@ return {
 
     config = function()
         local cmp = require("cmp")
-        local cmp_lsp = require("cmp")
 
         require("fidget").setup({})
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
-                "lua_ls", 
-                "verible",
+                "lua_ls",
+                "svlangserver",
                 "pyright"
             },
             handlers = {
